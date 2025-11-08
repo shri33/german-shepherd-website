@@ -137,37 +137,38 @@
             margin-top: 30px;
         }
         
-        .image-placeholder {
+        .image-card {
             background: white;
-            padding: 60px 30px;
+            padding: 0;
             text-align: center;
             transition: all 0.3s ease;
-            min-height: 250px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            overflow: hidden;
         }
         
-        .image-placeholder:hover {
+        .image-card:hover {
             background: #F5F5F5;
         }
         
-        .image-placeholder .emoji {
-            font-size: 48px;
-            margin-bottom: 15px;
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
         }
         
-        .image-placeholder h4 {
+        .image-card h4 {
             color: #B87B4B;
-            margin-bottom: 10px;
+            margin: 15px 0 10px 0;
             font-size: 22px;
             font-weight: 600;
+            padding: 0 15px;
         }
         
-        .image-placeholder p {
+        .image-card p {
             color: #6B4F3A;
             font-style: italic;
+            padding: 0 15px 15px 15px;
+            line-height: 1.4;
         }
         
         .facts-section {
@@ -251,43 +252,61 @@
 
         <div class="content-section">
             <h3>Photo Gallery</h3>
-            <p>Here you would find stunning photos of German Shepherds in various settings. For this demo, we're showing placeholders that represent where beautiful images would be displayed.</p>
+            <p>A stunning collection of German Shepherd photographs showcasing their beauty, intelligence, and versatility in various settings and environments.</p>
             
             <div class="gallery-grid">
-                <div class="image-placeholder">
-                    <div class="emoji">🐕‍🦺</div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Black and tan German Shepherd lying on floor" loading="lazy">
+                    <h4>Resting German Shepherd</h4>
+                    <p>A beautiful black and tan German Shepherd in a peaceful resting position, showcasing their noble demeanor.</p>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1605568427561-40dd23c2acea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="German Shepherd on green grass field" loading="lazy">
+                    <h4>German Shepherd Outdoors</h4>
+                    <p>A magnificent German Shepherd standing proudly on green grass, displaying their natural confidence and alertness.</p>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Grayscale German Shepherd portrait" loading="lazy">
+                    <h4>German Shepherd Portrait</h4>
+                    <p>An artistic black and white portrait highlighting the intelligent expression and noble features of the breed.</p>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="German Shepherd lying on brick floor" loading="lazy">
+                    <h4>Relaxed German Shepherd</h4>
+                    <p>A comfortable German Shepherd resting on a brick surface, showing their adaptable and calm nature.</p>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://images.pexels.com/photos/31566539/pexels-photo-31566539.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80" alt="German Shepherd sitting in garden" loading="lazy">
+                    <h4>German Shepherd in Garden</h4>
+                    <p>A well-trained German Shepherd sitting attentively in a beautiful garden setting, exemplifying obedience and poise.</p>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://images.pexels.com/photos/20368539/pexels-photo-20368539.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80" alt="German Shepherd dog portrait" loading="lazy">
+                    <h4>German Shepherd Close-up</h4>
+                    <p>An intimate portrait showcasing the intelligent eyes and distinctive features that make German Shepherds so beloved.</p>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="German Shepherd puppy" loading="lazy">
+                    <h4>German Shepherd Puppy</h4>
+                    <p>An adorable German Shepherd puppy displaying the breed's characteristic features and playful nature from an early age.</p>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="German Shepherd working dog" loading="lazy">
                     <h4>Working German Shepherd</h4>
-                    <p>A German Shepherd in police or military service, showcasing their professional capabilities.</p>
+                    <p>A German Shepherd in action, demonstrating their exceptional working abilities and dedication to their tasks.</p>
                 </div>
                 
-                <div class="image-placeholder">
-                    <div class="emoji">🏃‍♂️</div>
-                    <h4>Active & Athletic</h4>
-                    <p>German Shepherd running or playing, demonstrating their high energy and athletic ability.</p>
-                </div>
-                
-                <div class="image-placeholder">
-                    <div class="emoji">👨‍👩‍👧‍👦</div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1577023311546-cdc07a8454d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="German Shepherd family companion" loading="lazy">
                     <h4>Family Companion</h4>
-                    <p>German Shepherd with family members, showing their gentle and protective nature with children.</p>
-                </div>
-                
-                <div class="image-placeholder">
-                    <div class="emoji">🎾</div>
-                    <h4>Playful Moments</h4>
-                    <p>German Shepherd playing with toys or engaging in recreational activities.</p>
-                </div>
-                
-                <div class="image-placeholder">
-                    <div class="emoji">🌲</div>
-                    <h4>Natural Environment</h4>
-                    <p>German Shepherd in outdoor settings, hiking trails, or natural landscapes.</p>
-                </div>
-                
-                <div class="image-placeholder">
-                    <div class="emoji">🏆</div>
-                    <h4>Show & Competition</h4>
-                    <p>German Shepherd in dog shows, agility competitions, or obedience trials.</p>
+                    <p>A German Shepherd showing their gentle and protective nature as a beloved family member and guardian.</p>
                 </div>
             </div>
         </div>
@@ -296,27 +315,27 @@
             <h3>Fun Facts About German Shepherds</h3>
             <div class="facts-section">
                 <div class="fact-card">
-                    <h4>🎬 Hollywood Stars</h4>
+                    <h4>Hollywood Stars</h4>
                     <p>Famous German Shepherds in movies and TV include Rin Tin Tin, who appeared in 27 Hollywood films and helped save Warner Bros. from bankruptcy.</p>
                 </div>
                 
                 <div class="fact-card">
-                    <h4>🇺🇸 Presidential Pets</h4>
+                    <h4>Presidential Pets</h4>
                     <p>Several U.S. Presidents have owned German Shepherds, including Franklin D. Roosevelt (Major) and John F. Kennedy (Clipper).</p>
                 </div>
                 
                 <div class="fact-card">
-                    <h4>🔢 By the Numbers</h4>
+                    <h4>By the Numbers</h4>
                     <p>German Shepherds are the 2nd most popular dog breed in the US and can live 9-13 years with proper care.</p>
                 </div>
                 
                 <div class="fact-card">
-                    <h4>👃 Super Senses</h4>
+                    <h4>Super Senses</h4>
                     <p>German Shepherds have about 225 million scent receptors (humans have only 5 million), making them exceptional at detection work.</p>
                 </div>
                 
                 <div class="fact-card">
-                    <h4>🌍 Global Recognition</h4>
+                    <h4>Global Recognition</h4>
                     <p>Originally called "Alsatian Wolf Dog" in Britain during WWI, the breed is now recognized worldwide by major kennel clubs.</p>
                 </div>
                 
