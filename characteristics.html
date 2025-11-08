@@ -13,18 +13,20 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e8e8e8;
             line-height: 1.6;
+            min-height: 100vh;
         }
         
         header {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(26, 26, 46, 0.95);
             padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.3);
             position: sticky;
             top: 0;
             z-index: 100;
+            backdrop-filter: blur(10px);
         }
         
         nav {
@@ -37,8 +39,9 @@
         }
         
         nav h1 {
-            color: #667eea;
+            color: #00d4ff;
             font-size: 28px;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
         }
         
         nav ul {
@@ -49,13 +52,30 @@
         
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #e8e8e8;
             font-weight: 500;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
+            position: relative;
         }
         
         nav a:hover {
-            color: #667eea;
+            color: #00d4ff;
+            transform: translateY(-2px);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, #00d4ff, #0099cc);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
         }
         
         .container {
@@ -65,34 +85,43 @@
         }
         
         .hero {
-            background: white;
-            border-radius: 15px;
-            padding: 60px;
+            background: rgba(26, 26, 46, 0.9);
+            border-radius: 20px;
+            padding: 80px 60px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
             margin-bottom: 40px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 1s ease-out;
         }
         
         .hero h2 {
-            font-size: 48px;
-            color: #667eea;
+            font-size: 52px;
+            color: #00d4ff;
             margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
         }
         
         .content-section {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
+            background: rgba(26, 26, 46, 0.9);
+            border-radius: 20px;
+            padding: 50px;
             margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 1s ease-out 0.5s both;
         }
         
         .content-section h3 {
-            color: #667eea;
-            font-size: 32px;
+            color: #00d4ff;
+            font-size: 36px;
             margin-bottom: 20px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #00d4ff;
             padding-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
         }
         
         .characteristics-grid {
@@ -103,22 +132,26 @@
         }
         
         .characteristic-card {
-            background: #f8f9ff;
-            padding: 30px;
-            border-radius: 15px;
-            border-left: 5px solid #667eea;
-            transition: all 0.3s;
+            background: rgba(33, 37, 58, 0.9);
+            padding: 35px;
+            border-radius: 20px;
+            border-left: 5px solid #00d4ff;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 212, 255, 0.1);
         }
         
         .characteristic-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 212, 255, 0.3);
+            border-color: #00d4ff;
         }
         
         .characteristic-card h4 {
-            color: #667eea;
+            color: #00d4ff;
             margin-bottom: 15px;
-            font-size: 24px;
+            font-size: 26px;
+            text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
         }
         
         .rating {
@@ -134,10 +167,35 @@
         }
         
         footer {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(26, 26, 46, 0.9);
             text-align: center;
             padding: 20px;
             margin-top: 40px;
+            border-top: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        
+        footer p {
+            color: #b8c5d1;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+            }
+            to {
+                text-shadow: 0 0 30px rgba(0, 212, 255, 0.8), 0 0 40px rgba(0, 212, 255, 0.6);
+            }
         }
     </style>
 </head>
