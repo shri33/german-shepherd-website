@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Shepherd Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        nav h1 {
+            color: #667eea;
+            font-size: 28px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            background: white;
+            border-radius: 15px;
+            padding: 60px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+        }
+        
+        .hero h2 {
+            font-size: 48px;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .content-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .content-section h3 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .image-placeholder {
+            background: linear-gradient(135deg, #f0f2f5 0%, #e1e7ed 100%);
+            border-radius: 15px;
+            padding: 60px 30px;
+            text-align: center;
+            border: 2px dashed #667eea;
+            transition: all 0.3s;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image-placeholder:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .image-placeholder .emoji {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .image-placeholder h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .image-placeholder p {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .facts-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .fact-card {
+            background: #f8f9ff;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+        
+        .fact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .fact-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>🐕 German Shepherd World</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characteristics.html">Characteristics</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>German Shepherd Gallery</h2>
+            <p>A visual journey through the world of German Shepherds - showcasing their beauty, intelligence, and versatility.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Photo Gallery</h3>
+            <p>Here you would find stunning photos of German Shepherds in various settings. For this demo, we're showing placeholders that represent where beautiful images would be displayed.</p>
+            
+            <div class="gallery-grid">
+                <div class="image-placeholder">
+                    <div class="emoji">🐕‍🦺</div>
+                    <h4>Working German Shepherd</h4>
+                    <p>A German Shepherd in police or military service, showcasing their professional capabilities.</p>
+                </div>
+                
+                <div class="image-placeholder">
+                    <div class="emoji">🏃‍♂️</div>
+                    <h4>Active & Athletic</h4>
+                    <p>German Shepherd running or playing, demonstrating their high energy and athletic ability.</p>
+                </div>
+                
+                <div class="image-placeholder">
+                    <div class="emoji">👨‍👩‍👧‍👦</div>
+                    <h4>Family Companion</h4>
+                    <p>German Shepherd with family members, showing their gentle and protective nature with children.</p>
+                </div>
+                
+                <div class="image-placeholder">
+                    <div class="emoji">🎾</div>
+                    <h4>Playful Moments</h4>
+                    <p>German Shepherd playing with toys or engaging in recreational activities.</p>
+                </div>
+                
+                <div class="image-placeholder">
+                    <div class="emoji">🌲</div>
+                    <h4>Natural Environment</h4>
+                    <p>German Shepherd in outdoor settings, hiking trails, or natural landscapes.</p>
+                </div>
+                
+                <div class="image-placeholder">
+                    <div class="emoji">🏆</div>
+                    <h4>Show & Competition</h4>
+                    <p>German Shepherd in dog shows, agility competitions, or obedience trials.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Fun Facts About German Shepherds</h3>
+            <div class="facts-section">
+                <div class="fact-card">
+                    <h4>🎬 Hollywood Stars</h4>
+                    <p>Famous German Shepherds in movies and TV include Rin Tin Tin, who appeared in 27 Hollywood films and helped save Warner Bros. from bankruptcy.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h4>🇺🇸 Presidential Pets</h4>
+                    <p>Several U.S. Presidents have owned German Shepherds, including Franklin D. Roosevelt (Major) and John F. Kennedy (Clipper).</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h4>🔢 By the Numbers</h4>
+                    <p>German Shepherds are the 2nd most popular dog breed in the US and can live 9-13 years with proper care.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h4>👃 Super Senses</h4>
+                    <p>German Shepherds have about 225 million scent receptors (humans have only 5 million), making them exceptional at detection work.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h4>🌍 Global Recognition</h4>
+                    <p>Originally called "Alsatian Wolf Dog" in Britain during WWI, the breed is now recognized worldwide by major kennel clubs.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h4>🧬 Genetic Diversity</h4>
+                    <p>The breed was developed from various herding dogs in Germany and was first exhibited at a dog show in 1899.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 German Shepherd World | Created with ❤️ for Dog Lovers</p>
+    </footer>
+</body>
+</html>
