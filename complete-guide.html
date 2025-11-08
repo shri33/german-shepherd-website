@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Shepherd: Complete A-Z Guide</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #FBE8C7 0%, #F5E6A3 30%, #E8D5A3 100%);
+            background-attachment: fixed;
+            color: #2E2E2E;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20px 20px, rgba(184, 123, 75, 0.1) 2px, transparent 2px),
+                radial-gradient(circle at 80px 80px, rgba(184, 123, 75, 0.08) 1px, transparent 1px);
+            background-size: 100px 100px, 60px 60px;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            padding: 20px 0;
+            box-shadow: 0 4px 20px rgba(184, 123, 75, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid #B87B4B;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        nav h1 {
+            font-family: 'Baloo 2', cursive;
+            color: #B87B4B;
+            font-size: 32px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(184, 123, 75, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        nav h1::before {
+            content: '🐕';
+            font-size: 36px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #2E2E2E;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 8px 16px;
+            border-radius: 25px;
+        }
+        
+        nav a:hover {
+            color: #B87B4B;
+            background: rgba(184, 123, 75, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 50%;
+            background: linear-gradient(90deg, #B87B4B, #E3C28D);
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+        
+        nav a:hover::after {
+            width: 80%;
+            left: 10%;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(184, 123, 75, 0.2);
+            margin-bottom: 40px;
+            border: 2px solid rgba(184, 123, 75, 0.2);
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .hero h2 {
+            font-family: 'Baloo 2', cursive;
+            font-size: 48px;
+            color: #B87B4B;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(184, 123, 75, 0.3);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: #5D4037;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(184, 123, 75, 0.15);
+            border: 2px solid rgba(184, 123, 75, 0.1);
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+        
+        .content-section h3 {
+            font-family: 'Baloo 2', cursive;
+            color: #B87B4B;
+            font-size: 32px;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #E3C28D;
+            padding-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(184, 123, 75, 0.3);
+        }
+        
+        .content-section h4 {
+            font-family: 'Baloo 2', cursive;
+            color: #8B4513;
+            font-size: 24px;
+            margin: 30px 0 15px 0;
+        }
+        
+        .content-section h5 {
+            font-weight: 600;
+            color: #B87B4B;
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+        }
+        
+        .content-section p {
+            margin-bottom: 15px;
+            color: #4A4A4A;
+            line-height: 1.8;
+        }
+        
+        .content-section ul {
+            margin: 15px 0 15px 20px;
+            color: #4A4A4A;
+        }
+        
+        .content-section li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .content-section strong {
+            color: #8B4513;
+        }
+        
+        .characteristics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .characteristic-card {
+            background: linear-gradient(135deg, rgba(227, 194, 141, 0.3), rgba(251, 232, 199, 0.3));
+            padding: 30px;
+            border-radius: 20px;
+            border-left: 5px solid #B87B4B;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(184, 123, 75, 0.2);
+        }
+        
+        .characteristic-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(184, 123, 75, 0.25);
+            border-color: #B87B4B;
+            background: linear-gradient(135deg, rgba(227, 194, 141, 0.4), rgba(251, 232, 199, 0.4));
+        }
+        
+        .characteristic-card h4 {
+            color: #B87B4B;
+            margin-bottom: 15px;
+            font-size: 22px;
+            font-family: 'Baloo 2', cursive;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        .stars {
+            color: #ffd700;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, rgba(184, 123, 75, 0.1), rgba(227, 194, 141, 0.1));
+            border-left: 4px solid #B87B4B;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        
+        .timeline-item {
+            border-left: 3px solid #E3C28D;
+            padding-left: 25px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background: #B87B4B;
+            border-radius: 50%;
+        }
+        
+        .timeline-item h5 {
+            color: #B87B4B;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(184, 123, 75, 0.2);
+        }
+        
+        th {
+            background: linear-gradient(135deg, #B87B4B, #E3C28D);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 235, 59, 0.1));
+            border-left: 4px solid #FFC107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        
+        .warning-box strong {
+            color: #FF8F00;
+        }
+        
+        .table-of-contents {
+            background: rgba(227, 194, 141, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 2px solid rgba(184, 123, 75, 0.2);
+        }
+        
+        .table-of-contents h4 {
+            font-family: 'Baloo 2', cursive;
+            color: #B87B4B;
+            margin-bottom: 15px;
+        }
+        
+        .table-of-contents ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .table-of-contents li {
+            margin-bottom: 8px;
+        }
+        
+        .table-of-contents a {
+            color: #5D4037;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 8px;
+            display: block;
+        }
+        
+        .table-of-contents a:hover {
+            color: #B87B4B;
+            background: rgba(184, 123, 75, 0.1);
+            transform: translateX(5px);
+        }
+        
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            border-top: 3px solid #B87B4B;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        footer p {
+            color: #5D4037;
+            font-weight: 500;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 2px 2px 4px rgba(184, 123, 75, 0.3);
+            }
+            to {
+                text-shadow: 2px 2px 8px rgba(184, 123, 75, 0.6);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .hero {
+                padding: 40px 20px;
+            }
+            
+            .hero h2 {
+                font-size: 36px;
+            }
+            
+            .content-section {
+                padding: 25px;
+            }
+            
+            .characteristics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>German Shepherd World</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="complete-guide.html">Complete Guide</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>🐾 German Shepherd: The Complete A-Z Guide 🐾</h2>
+            <p>Everything you need to know about this legendary breed - from their fascinating history to modern care requirements</p>
+        </div>
+
+        <div class="table-of-contents">
+            <h4>📖 Quick Navigation</h4>
+            <ul>
+                <li><a href="#origin">1. Origin & History</a></li>
+                <li><a href="#characteristics">2. Characteristics & Personality</a></li>
+                <li><a href="#intelligence">3. Intelligence & Training</a></li>
+                <li><a href="#working">4. Working & Utility Roles</a></li>
+                <li><a href="#health">5. Health & Care</a></li>
+                <li><a href="#diet">6. Diet & Nutrition</a></li>
+                <li><a href="#breeding">7. Breeding & Puppies</a></li>
+                <li><a href="#varieties">8. Varieties & Colors</a></li>
+                <li><a href="#behavior">9. Behavior & Living</a></li>
+                <li><a href="#famous">10. Famous & Cultural Impact</a></li>
+            </ul>
+        </div>
+
+        <div class="content-section" id="origin">
+            <h3>1. Origin & History 🏛️</h3>
+            
+            <h4>The Birth of a Legendary Breed</h4>
+            <p>The German Shepherd breed originated in Germany in 1899, emerging from the vision of <strong>Captain Max von Stephanitz</strong>, a former cavalry officer and veterinary student who dedicated himself to creating the ultimate working dog. At a dog show in Karlsruhe in April 1899, von Stephanitz encountered a medium-sized, wolf-like herding dog named Hektor Linksrhein that embodied everything he envisioned: intelligence, strength, endurance, steadiness, and powerful work ethic.</p>
+            
+            <div class="info-box">
+                <p><strong>Fun Fact:</strong> Von Stephanitz purchased Hektor immediately, renamed him Horand von Grafrath, and designated him as the foundation sire of the German Shepherd breed - making him the first-ever German Shepherd Dog with registration number SZ1!</p>
+            </div>
+
+            <p>That same month, von Stephanitz and his colleague Artur Meyer founded the <strong>Verein für Deutsche Schäferhunde</strong> (Society for the German Shepherd Dog), the first official club dedicated to the breed. The breed was developed from various traditional German herding dogs that had been bred within local communities to preserve traits that assisted in herding and protecting sheep.</p>
+
+            <h4>Strategic Development and Breed Standards</h4>
+            <p>Von Stephanitz implemented a systematic breeding program, heavily inbreeding on Horand and his brother Luchs to consolidate the bloodline. The club developed rigorous evaluation systems, including the Zuchtbuch (Breed Register) and later the Körbuch (Breed Survey Book), which determined a dog's suitability for breeding based on physical and mental characteristics rather than show wins alone.</p>
+
+            <h4>World Wars and Global Recognition</h4>
+            <div class="timeline-item">
+                <h5>World War I (1914-1918)</h5>
+                <p>Approximately 40,000 German Shepherds served in the German Army as Red Cross dogs, messengers, supply carriers, sentinels, and in tracking and guard duties. Allied soldiers witnessed firsthand the breed's bravery, intelligence, and steadfastness, and many brought dogs home with them.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h5>World War II (1939-1945)</h5>
+                <p>German Shepherds were employed by both Allied and Axis forces as mine detectors, sentinels, guards, messengers, and in search and rescue operations. In the United States, Dogs for Defense was formed, providing thousands of dogs to the army.</p>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Amazing Achievement:</strong> It has been said that units patrolling in the Pacific Theater with War Dog Platoons were never ambushed thanks to the K-9s assigned to them.</p>
+            </div>
+        </div>
+
+        <div class="content-section" id="characteristics">
+            <h3>2. Characteristics & Personality 🎭</h3>
+            
+            <h4>General Temperament</h4>
+            <p>German Shepherds are renowned for their exceptional combination of loyalty, intelligence, and protective instincts. They form deep emotional bonds with their families, demonstrating unwavering commitment and often acting as natural guardians. Studies show that <strong>88% of German Shepherd owners</strong> describe their dogs as "very loyal".</p>
+
+            <div class="characteristics-grid">
+                <div class="characteristic-card">
+                    <h4>🧠 Intelligence</h4>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>Exceptional (5/5)</span>
+                    </div>
+                    <p>Ranks 3rd in Stanley Coren's canine intelligence research. Can learn new commands in under 5 repetitions and respond correctly 95% of the time.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>❤️ Loyalty & Protection</h4>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>Outstanding (5/5)</span>
+                    </div>
+                    <p>75% actively guard their territory when sensing potential threats. Naturally wary of strangers but balanced with discernment.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>⚡ Energy Level</h4>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>High (4/5)</span>
+                    </div>
+                    <p>Requires substantial daily exercise and mental stimulation. Bred for work, they thrive with purposeful activities.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>👨‍👩‍👧‍👦 Family Compatibility</h4>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>Excellent (5/5)</span>
+                    </div>
+                    <p>Generally gentle with children and other animals when raised together. Their large size requires supervision with small children.</p>
+                </div>
+            </div>
+
+            <h4>Male vs Female Personality Differences</h4>
+            
+            <h5>🚹 Male German Shepherds</h5>
+            <ul>
+                <li><strong>Size:</strong> 24-26 inches tall, 65-90 pounds</li>
+                <li><strong>Temperament:</strong> Bolder, more assertive, and territorial</li>
+                <li><strong>Bonding:</strong> Tend to bond more strongly with one person while attached to entire family</li>
+                <li><strong>Energy:</strong> Higher energy levels requiring more exercise and mental stimulation</li>
+                <li><strong>Training:</strong> May be more assertive during adolescence, requiring firm structure</li>
+            </ul>
+
+            <h5>🚺 Female German Shepherds</h5>
+            <ul>
+                <li><strong>Size:</strong> 22-24 inches tall, 50-70 pounds</li>
+                <li><strong>Temperament:</strong> More nurturing and balanced, mature faster mentally</li>
+                <li><strong>Bonding:</strong> Protective of entire family rather than bonding primarily with one person</li>
+                <li><strong>Energy:</strong> Slightly lower energy levels, more laid back</li>
+                <li><strong>Training:</strong> Generally more cooperative and easier early training</li>
+            </ul>
+
+            <h4>Physical Traits & Colors</h4>
+            <p>German Shepherds are large, muscular dogs with a powerful, well-built frame designed for endurance and agility. They have a distinctive wedge-shaped head with pointy, erect ears and an intelligent expression. Their chest is deep (45-48% of height at shoulder), and they possess harmonious proportions combining strength and agility.</p>
+
+            <div class="info-box">
+                <p><strong>Color Varieties:</strong> Black & tan (most common), sable (wolf-like), solid black, white, blue, liver/tan, bi-color, and the rare panda pattern.</p>
+            </div>
+        </div>
+
+        <div class="content-section" id="intelligence">
+            <h3>3. Intelligence & Training 🎓</h3>
+            
+            <h4>Why German Shepherds Rank Among the Smartest Breeds</h4>
+            <p>German Shepherds consistently rank <strong>third among the most intelligent dog breeds</strong> in terms of obedience and working intelligence. According to Dr. Stanley Coren's research, German Shepherds are classified as "Brightest Dogs," capable of understanding new commands in fewer than five repetitions and obeying first commands 95% of the time or better.</p>
+
+            <div class="info-box">
+                <p><strong>Impressive Stats:</strong> With proper training, German Shepherds can master over 100 commands, making them incredibly versatile and reliable companions!</p>
+            </div>
+
+            <h4>Training Timeline & Guidelines</h4>
+            
+            <div class="timeline-item">
+                <h5>Puppy Stage (8-16 weeks)</h5>
+                <p><strong>Critical socialization window</strong> that closes at 12-16 weeks. Focus on basic commands like "sit," "stay," "come," and "down" using positive reinforcement. Begin crate training and leash training.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h5>Juvenile Period (3-9 months)</h5>
+                <p>Begin formal obedience training and continue socialization. Ideal time for puppy obedience classes. Work on recall training and impulse control exercises.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h5>Adolescent Period (9-24 months)</h5>
+                <p>Continue working on impulse control and advanced obedience skills. May test boundaries during this period - consistency is crucial.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h5>Adult Stage</h5>
+                <p>Training remains essential throughout adulthood. Continue with regular sessions to maintain discipline and explore specialized training like tracking, scent work, or protection work.</p>
+            </div>
+
+            <h4>Mental Stimulation Requirements</h4>
+            <p>Mental stimulation is as important as physical exercise for German Shepherds. Their highly intelligent brains need constant engagement to prevent boredom and associated behavioral issues.</p>
+
+            <div class="characteristics-grid">
+                <div class="characteristic-card">
+                    <h4>🧩 Puzzle Activities</h4>
+                    <p>Puzzle toys, treat-dispensing balls, hide-and-seek games, and interactive feeders to make mealtime engaging.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>👃 Scent Work</h4>
+                    <p>Utilizing their 225 scent receptors with nose games, tracking exercises, and "hunt" games where you hide toys.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>🎯 Advanced Training</h4>
+                    <p>Trick training, specialized obedience, and teaching dogs to perform tasks like putting toys in boxes.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>🏃 Active Challenges</h4>
+                    <p>Agility courses, tracking exercises, and activities that engage both mind and body simultaneously.</p>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>Warning:</strong> Without adequate mental challenges, German Shepherds can become destructive, exhibiting behaviors like excessive barking, chewing, digging, or hyperactivity.</p>
+            </div>
+        </div>
+
+        <div class="content-section" id="working">
+            <h3>4. Working & Utility Roles 👮‍♂️</h3>
+            
+            <h4>Professional Roles</h4>
+            
+            <h5>🚓 Police and Military Service</h5>
+            <p>German Shepherds are the most widely used breed in police and military work globally. In the United States, K-9 units employ dual-purpose dogs (DP) that combine patrol functions with contraband detection, while single-purpose detection dogs (SPD) specialize in either narcotics OR explosives detection.</p>
+
+            <div class="characteristics-grid">
+                <div class="characteristic-card">
+                    <h4>🔍 Detection Work</h4>
+                    <p><strong>Bomb Detection:</strong> Trained to detect specific chemicals like C-4, sitting and staying when locating explosives rather than alerting in ways that might trigger devices.</p>
+                    <p><strong>Narcotics:</strong> When K-9s indicate drug detection, officers gain reasonable cause to search vehicles without warrants in the US.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>🏢 Building Searches</h4>
+                    <p>Nearly <strong>40% higher success rates</strong> than officers searching without K-9 assistance. Their superior senses and training make them invaluable for suspect apprehension and area searches.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>🆘 Search & Rescue</h4>
+                    <p>Excel due to superior tracking abilities, endurance, and intelligence. First employed in WWI to aid wounded soldiers and lead injured/blinded soldiers to safety.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>🦮 Service & Therapy</h4>
+                    <p>Serve as therapy dogs, assistance dogs for disabilities, and seeing-eye dogs. Their intelligence and gentle nature with trusted humans makes them excellent for these roles.</p>
+                </div>
+            </div>
+
+            <h4>Why German Shepherds Excel in Working Roles</h4>
+            <ul>
+                <li><strong>Superior Intelligence:</strong> Ranking 3rd globally in obedience and working intelligence</li>
+                <li><strong>Versatility:</strong> Can transition between multiple roles within the same assignment</li>
+                <li><strong>Physical Capabilities:</strong> Possess strength, agility, endurance, and stamina for demanding work</li>
+                <li><strong>Temperament:</strong> Confidence, loyalty, fearlessness, and "nerves of steel"</li>
+                <li><strong>Trainability:</strong> Eagerness to learn and natural obedience</li>
+                <li><strong>Protective Instincts:</strong> Natural guarding instincts honed over generations</li>
+            </ul>
+
+            <h4>Famous Real-World German Shepherds</h4>
+            
+            <h5>🎬 Rin Tin Tin - Hollywood's Brightest Star</h5>
+            <p>The most famous German Shepherd in history. Rescued as a 5-day-old puppy from a bombed German military kennel in France during WWI by Corporal Lee Duncan. Went on to appear in <strong>27 Hollywood films</strong>, nearly won Best Actor at the first Academy Awards in 1929, and had his own radio program "The Wonder Dog" in 1930.</p>
+
+            <div class="info-box">
+                <p><strong>Legacy Impact:</strong> Rin Tin Tin's immense popularity contributed significantly to Warner Bros. studios' success and helped establish German Shepherds as beloved family pets in America, overcoming post-war anti-German sentiment.</p>
+            </div>
+
+            <h5>🏅 War Heroes</h5>
+            <ul>
+                <li><strong>Army Dog Vida:</strong> Detected 5 mines and a grenade in Kashmir Valley, preventing soldier casualties</li>
+                <li><strong>K-9 Cracker:</strong> Detected several IEDs before dying while detecting a pressure bomb, attaining martyrdom while saving many lives</li>
+                <li><strong>K9 Sophie:</strong> Special Frontier Force detection dog instrumental in multiple operations</li>
+            </ul>
+        </div>
+
+        <div class="content-section" id="health">
+            <h3>5. Health & Care 🏥</h3>
+            
+            <h4>Common Health Concerns & Prevention</h4>
+            
+            <h5>🦴 Hip Dysplasia</h5>
+            <p>One of the most common health concerns, affecting a significant percentage of German Shepherds. This orthopedic condition occurs when the hip joint doesn't develop properly—the ball at the top of the thigh bone doesn't fit correctly into the hip socket.</p>
+            
+            <div class="warning-box">
+                <p><strong>Warning Signs:</strong> Reluctance to jump or climb stairs, stiffness after rest, "bunny-hopping" gait when running, reduced mobility, and pain development.</p>
+            </div>
+
+            <p><strong>Prevention & Management:</strong></p>
+            <ul>
+                <li>Choose reputable breeders who screen breeding dogs through hip evaluations</li>
+                <li>Maintain healthy weight levels to reduce joint strain</li>
+                <li>Provide controlled exercise appropriate for age</li>
+                <li>Joint supplements (glucosamine and chondroitin) for support</li>
+                <li>Physical therapy for mild cases, surgical intervention for severe cases</li>
+            </ul>
+
+            <h5>🫃 Gastric Dilatation-Volvulus (Bloat)</h5>
+            <p>A life-threatening emergency condition where the stomach fills with gas and twists on itself, cutting off blood supply. German Shepherds are at higher risk due to their deep chest structure.</p>
+
+            <p><strong>Prevention Strategies:</strong></p>
+            <ul>
+                <li>Feed smaller, more frequent meals instead of one large meal</li>
+                <li>Avoid vigorous exercise immediately after eating</li>
+                <li>Use slow-feeding bowls to prevent rapid eating</li>
+                <li>Consider prophylactic gastropexy during spay procedures</li>
+            </ul>
+
+            <div class="warning-box">
+                <p><strong>Emergency Signs (Seek immediate vet attention):</strong> Distended hard abdomen, unsuccessful attempts to vomit, excessive drooling, restlessness and pacing, rapid breathing.</p>
+            </div>
+
+            <h4>Grooming & Coat Maintenance</h4>
+            
+            <h5>🪮 Brushing Requirements</h5>
+            <p>German Shepherds have a double coat consisting of a dense, water-resistant outer coat and a soft, insulating undercoat. This dual-layered coat sheds year-round with two major shedding seasons in spring and fall.</p>
+
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>Period</th>
+                        <th>Frequency</th>
+                        <th>Tools Needed</th>
+                    </tr>
+                    <tr>
+                        <td>Regular Periods</td>
+                        <td>2-3 times per week minimum</td>
+                        <td>Slicker brush, conditioning spray</td>
+                    </tr>
+                    <tr>
+                        <td>Shedding Seasons</td>
+                        <td>Daily brushing</td>
+                        <td>Undercoat rake (essential), slicker brush</td>
+                    </tr>
+                    <tr>
+                        <td>Long-haired GSDs</td>
+                        <td>Daily brushing</td>
+                        <td>Slicker brush, undercoat rake, detangling spray</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h5>🛁 Bathing Guidelines</h5>
+            <p><strong>Frequency:</strong> Every 4-8 weeks or as needed. More frequent bathing (every 2-3 weeks) may be appropriate during heavy shedding seasons.</p>
+
+            <div class="info-box">
+                <p><strong>Pro Tip:</strong> Always brush thoroughly before bathing to remove tangles and loose hair. Use dog-specific shampoo and rinse thoroughly to prevent skin irritation.</p>
+            </div>
+
+            <h4>Vaccination & Vet Visit Schedules</h4>
+            
+            <h5>🐕 Puppy Vaccination Schedule</h5>
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>Age</th>
+                        <th>Core Vaccines (DHPP)</th>
+                        <th>Rabies</th>
+                        <th>Optional Vaccines</th>
+                    </tr>
+                    <tr>
+                        <td>6-8 weeks</td>
+                        <td>First dose</td>
+                        <td>-</td>
+                        <td>Bordetella, Leptospirosis</td>
+                    </tr>
+                    <tr>
+                        <td>10-12 weeks</td>
+                        <td>Second dose</td>
+                        <td>-</td>
+                        <td>Boosters as needed</td>
+                    </tr>
+                    <tr>
+                        <td>12-16 weeks</td>
+                        <td>Third dose</td>
+                        <td>First dose</td>
+                        <td>Lyme, Canine Influenza</td>
+                    </tr>
+                    <tr>
+                        <td>1 year</td>
+                        <td>First booster</td>
+                        <td>First booster</td>
+                        <td>Annual vaccines</td>
+                    </tr>
+                    <tr>
+                        <td>Every 3 years</td>
+                        <td>Ongoing boosters</td>
+                        <td>Ongoing boosters</td>
+                        <td>As recommended</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>Important:</strong> Some German Shepherds are sensitive to individual vaccinations. Always work with a veterinarian familiar with the breed.</p>
+            </div>
+        </div>
+
+        <div class="content-section" id="diet">
+            <h3>6. Diet & Nutrition 🍖</h3>
+            
+            <h4>Complete Feeding Guidelines by Life Stage</h4>
+            
+            <h5>🐕 Puppy Feeding (Birth to 12 months)</h5>
+            
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>Age</th>
+                        <th>Feeding Frequency</th>
+                        <th>Daily Amount (cups)</th>
+                        <th>Key Nutrients</th>
+                    </tr>
+                    <tr>
+                        <td>2-4 months</td>
+                        <td>4-5 feedings daily</td>
+                        <td>1-3 cups total</td>
+                        <td>High protein & fat for growth</td>
+                    </tr>
+                    <tr>
+                        <td>4-6 months</td>
+                        <td>3-4 feedings daily</td>
+                        <td>2-4 cups total</td>
+                        <td>Calcium & phosphorus for bones</td>
+                    </tr>
+                    <tr>
+                        <td>6-12 months</td>
+                        <td>2-3 feedings daily</td>
+                        <td>3-5 cups total</td>
+                        <td>DHA & EPA for joint support</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h5>🐕‍🦺 Adult Feeding (15 months - 8 years)</h5>
+            <ul>
+                <li><strong>Frequency:</strong> 2 times daily</li>
+                <li><strong>Daily Calories:</strong> Approximately 1,700 calories</li>
+                <li><strong>Protein Content:</strong> Minimum 18-25% (preferably 18% or higher)</li>
+                <li><strong>Fat Content:</strong> 5% minimum for energy and skin health</li>
+                <li><strong>Key Supplements:</strong> Glucosamine, chondroitin, Omega-3 fatty acids</li>
+            </ul>
+
+            <h5>🐕‍🦳 Senior Feeding (8+ years)</h5>
+            <ul>
+                <li><strong>Daily Calories:</strong> Approximately 1,200 calories</li>
+                <li><strong>Special Needs:</strong> Lower protein and fat, higher fiber</li>
+                <li><strong>Additional Support:</strong> Fish oil for anti-inflammatory effects, fewer carbohydrates</li>
+            </ul>
+
+            <h4>Natural vs. Packaged Food Comparison</h4>
+            
+            <div class="characteristics-grid">
+                <div class="characteristic-card">
+                    <h4>🥕 Natural/Homemade Food</h4>
+                    <p><strong>Pros:</strong> Complete ingredient control, no preservatives, customizable for allergies, fresh flavors</p>
+                    <p><strong>Cons:</strong> Time-consuming, may lack nutrients without proper formulation, requires expert guidance, expensive supplements needed</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>🏪 Commercial Food</h4>
+                    <p><strong>Pros:</strong> Nutritionally balanced, meets AAFCO requirements, convenient, cost-effective, shelf-stable</p>
+                    <p><strong>Cons:</strong> May contain preservatives and fillers, less ingredient control, occasional recalls</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Expert Recommendation:</strong> Store-bought food wins in almost all aspects for most owners. If choosing homemade, use scientifically backed recipes from veterinary nutrition experts.</p>
+            </div>
+
+            <h4>Foods to Strictly Avoid</h4>
+            
+            <div class="warning-box">
+                <p><strong>Highly Toxic Foods (Can be fatal):</strong></p>
+                <ul>
+                    <li><strong>Chocolate:</strong> Contains theobromine and caffeine - toxic to dogs</li>
+                    <li><strong>Grapes & Raisins:</strong> Cause acute kidney failure even in small amounts</li>
+                    <li><strong>Onions & Garlic:</strong> Damage red blood cells, leading to anemia</li>
+                    <li><strong>Xylitol:</strong> Artificial sweetener causing rapid insulin release and liver failure</li>
+                    <li><strong>Macadamia Nuts:</strong> Cause weakness, tremors, and hyperthermia</li>
+                    <li><strong>Avocado:</strong> Contains persin, toxic to dogs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section" id="breeding">
+            <h3>7. Breeding & Puppies 👶🐕</h3>
+            
+            <h4>Breeding Requirements & Process</h4>
+            
+            <h5>📅 Age Requirements</h5>
+            <ul>
+                <li><strong>Males:</strong> Must be at least 2 years old at time of breeding</li>
+                <li><strong>Females:</strong> Must be 20 months old at first breeding</li>
+                <li><strong>Note:</strong> While technical maturity occurs at 6-12 months, breeding should only occur after 1.5-1.8 years for physical and mental maturity</li>
+            </ul>
+
+            <h5>🌡️ Heat Cycle & Mating Timing</h5>
+            <div class="timeline-item">
+                <h5>Proestrus (7-10 days)</h5>
+                <p>Swollen vulva and bloody discharge. Females attract male attention but aren't receptive to mating yet.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h5>Estrus (5-14 days)</h5>
+                <p>Fertile period when females are receptive to mating. Discharge changes from bloody to straw-colored fluid.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h5>Diestrus (up to 60 days)</h5>
+                <p>Body acts as if pregnant even without mating. Significant decrease in activity level.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h5>Anestrus (2-4 months)</h5>
+                <p>Resting phase where dog returns to normal behavior with no heat cycle signs.</p>
+            </div>
+
+            <h5>🤰 Pregnancy Care</h5>
+            <p><strong>Gestation Period:</strong> 58-65 days (average 63 days)</p>
+            
+            <ul>
+                <li><strong>First 6 weeks:</strong> Maintain same food intake</li>
+                <li><strong>Final trimester:</strong> Gradually increase food portions as puppies grow</li>
+                <li><strong>Throughout:</strong> Regular veterinary check-ups, monitor weight gain, prepare safe whelping area</li>
+            </ul>
+
+            <h4>Show-Line vs. Working-Line Differences</h4>
+            
+            <div class="characteristics-grid">
+                <div class="characteristic-card">
+                    <h4>🏆 Show-Line Characteristics</h4>
+                    <p><strong>Appearance:</strong> More refined, elegant look with pronounced angulation in hindquarters</p>
+                    <p><strong>Temperament:</strong> Lower energy, friendlier, calmer disposition</p>
+                    <p><strong>Health:</strong> More prone to hip/elbow dysplasia due to structure</p>
+                    <p><strong>Training:</strong> Suitable for novice handlers, adapt well to basic training</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>💼 Working-Line Characteristics</h4>
+                    <p><strong>Appearance:</strong> Straighter backs, more robust athletic frames</p>
+                    <p><strong>Temperament:</strong> High energy, high drive, fearless with "nerves of steel"</p>
+                    <p><strong>Health:</strong> More rugged and typically healthier</p>
+                    <p><strong>Training:</strong> Require experienced handlers, excel in demanding jobs</p>
+                </div>
+            </div>
+
+            <h4>Puppy Development Stages</h4>
+            
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>Stage</th>
+                        <th>Age</th>
+                        <th>Key Milestones</th>
+                        <th>Weight Range</th>
+                    </tr>
+                    <tr>
+                        <td>Neonatal</td>
+                        <td>Birth - 2 weeks</td>
+                        <td>Blind, deaf, completely dependent on mother</td>
+                        <td>1-2 pounds</td>
+                    </tr>
+                    <tr>
+                        <td>Transitional</td>
+                        <td>2-4 weeks</td>
+                        <td>Eyes open, ears open, first teeth emerge</td>
+                        <td>4-9 pounds</td>
+                    </tr>
+                    <tr>
+                        <td>Socialization</td>
+                        <td>3-12 weeks</td>
+                        <td>Critical learning period, weaning begins</td>
+                        <td>11-20 pounds</td>
+                    </tr>
+                    <tr>
+                        <td>Juvenile</td>
+                        <td>3-6 months</td>
+                        <td>Adult teeth emerge, house training</td>
+                        <td>20-55 pounds</td>
+                    </tr>
+                    <tr>
+                        <td>Adolescent</td>
+                        <td>6-24 months</td>
+                        <td>Growth spurts, may test boundaries</td>
+                        <td>50-85 pounds</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>Critical Period:</strong> The socialization window (3-14 weeks) is crucial for German Shepherds. Exposure to various people, animals, and environments during this time prevents fear or aggression issues later.</p>
+            </div>
+        </div>
+
+        <div class="content-section" id="varieties">
+            <h3>8. Varieties & Colors 🎨</h3>
+            
+            <h4>Coat Types</h4>
+            
+            <div class="characteristics-grid">
+                <div class="characteristic-card">
+                    <h4>📏 Short-Coated (Stock Coat)</h4>
+                    <p><strong>Length:</strong> 1-2 inches</p>
+                    <p><strong>Texture:</strong> Dense, water-resistant, slightly shorter</p>
+                    <p><strong>Advantages:</strong> Easier maintenance, dries quicker, preferred for working</p>
+                    <p><strong>Grooming:</strong> 2-3 times weekly, daily during shedding</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>📏 Long-Coated</h4>
+                    <p><strong>Length:</strong> More than 2 inches, often much longer</p>
+                    <p><strong>Texture:</strong> Softer, wavier, silkier than short-coat</p>
+                    <p><strong>Features:</strong> Prominent feathering, mane-like chest fur</p>
+                    <p><strong>Grooming:</strong> Daily brushing to prevent matting</p>
+                </div>
+            </div>
+
+            <h4>Color Varieties & Genetics</h4>
+            
+            <h5>🎨 Most Common Colors</h5>
+            
+            <div class="timeline-item">
+                <h5>Black & Tan (Most Popular)</h5>
+                <p>Classic saddle pattern with black dominating back and limbs, tan on legs, face, and belly. Most recognized variation associated with famous dogs like Rin Tin Tin.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h5>Sable (Wolf-Like)</h5>
+                <p>Each hair is banded with multiple colors—black, tan, and gray. Creates dynamic, ever-changing coat appearance. Variations include black sable, tan sable, silver sable, and red sable.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h5>Solid Black</h5>
+                <p>Rare and striking variation from recessive genes. Completely black coat with no other markings. Excellent for experienced handlers.</p>
+            </div>
+
+            <h5>🌈 Rare Color Variations</h5>
+            <ul>
+                <li><strong>White:</strong> Pure white/cream coat from recessive genes. Not officially recognized in some show rings but same abilities as other colors.</li>
+                <li><strong>Blue:</strong> Steel-blue or slate-gray coat from recessive dilute gene. Three variations: blue and tan, blue and sable, blue and black.</li>
+                <li><strong>Liver/Tan:</strong> Brown pigmentation instead of black from recessive genes.</li>
+                <li><strong>Bi-Color:</strong> Predominantly black with minimal tan markings only on legs, paws, and sometimes face.</li>
+                <li><strong>Panda:</strong> Extremely rare piebald pattern with white markings combined with traditional GSD colors.</li>
+            </ul>
+
+            <h4>Bloodline Variations</h4>
+            
+            <div class="characteristics-grid">
+                <div class="characteristic-card">
+                    <h4>🇩🇪 West German Working Line</h4>
+                    <p>Most balanced in appearance, temperament, and working ability. Closest to original von Stephanitz vision. Versatile for both work and family.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>🏛️ East German (DDR)</h4>
+                    <p>Stocky bodies, large heads, thick bones, very dark pigment. Extremely strict breeding program during Cold War. Amazing genetics with clean health.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>🇨🇿 Czech Working Line</h4>
+                    <p>More slender and streamlined than DDR. Highest drives among working lines. Perfect balance of prey and defense drive with phenomenal temperaments.</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>🇺🇸 American/Canadian Show Line</h4>
+                    <p>Narrow faces, extremely angular hindquarters. Bred for conformation shows. Lower energy, more suitable for families but prone to hip issues.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" id="behavior">
+            <h3>9. Behavior & Living 🏠</h3>
+            
+            <h4>Indoor vs. Outdoor Living</h4>
+            
+            <h5>🏠 Indoor Living Capabilities</h5>
+            <p>German Shepherds can be excellent indoor dogs with proper care and consistent daily routines. Despite being active dogs with guarding instincts, they can adjust to various living situations including apartments with the right training and exercise.</p>
+
+            <div class="info-box">
+                <p><strong>Key Success Factor:</strong> The size of the home doesn't dictate success—what matters is the amount of exercise and mental stimulation provided.</p>
+            </div>
+
+            <h4>Apartment Living Requirements</h4>
+            
+            <div class="characteristics-grid">
+                <div class="characteristic-card">
+                    <h4>🏃 Exercise Requirements</h4>
+                    <p><strong>Daily Minimum:</strong> 30-60 minutes, ideally more</p>
+                    <p><strong>Ideal:</strong> 2+ hours off-leash time daily</p>
+                    <p><strong>Activities:</strong> 2-3 walks plus weekend hikes/runs</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>🧠 Mental Stimulation</h4>
+                    <p><strong>Interactive Toys:</strong> Puzzle feeders, treat-dispensing balls</p>
+                    <p><strong>Training:</strong> Daily sessions integrated into routine</p>
+                    <p><strong>Games:</strong> Hide-and-seek, scent work, rotating toys</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>🎯 Training & Boundaries</h4>
+                    <p><strong>Early Training:</strong> Establish boundaries through consistent sessions</p>
+                    <p><strong>Routine:</strong> Consistent schedule to reduce stress</p>
+                    <p><strong>Commands:</strong> Manage behavior in confined spaces</p>
+                </div>
+                
+                <div class="characteristic-card">
+                    <h4>👥 Socialization</h4>
+                    <p><strong>Regular Visits:</strong> Pet-friendly places and environments</p>
+                    <p><strong>Dog Interaction:</strong> Parks, playdates with other dogs</p>
+                    <p><strong>People Exposure:</strong> Various environments and people</p>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>Apartment Challenges:</strong> Without sufficient exercise, dogs become irritable, destructive, and develop behavioral issues like excessive barking, chewing, or nipping at people/pets.</p>
+            </div>
+        </div>
+
+        <div class="content-section" id="famous">
+            <h3>10. Famous & Cultural Impact 🎬</h3>
+            
+            <h4>Rin Tin Tin: The International Superstar</h4>
+            <p>Rin Tin Tin remains the most famous German Shepherd in history and one of Hollywood's brightest canine stars, whose legacy spans nearly a century. His remarkable journey began in 1918 during World War I when American Corporal Lee Duncan discovered a bombed German military kennel in France containing a starving mother with five nursing puppies, their eyes still shut.</p>
+
+            <div class="timeline-item">
+                <h5>🎬 Film Career Achievement</h5>
+                <p>Appeared in <strong>27 Hollywood films</strong>, gaining worldwide fame. The immense profitability of his movies contributed significantly to Warner Bros. studios' success and helped advance Darryl F. Zanuck's career from screenwriter to producer and studio executive.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h5>🏆 Academy Awards Near-Win</h5>
+                <p>Became so popular that he nearly won Best Actor at the first Academy Awards in 1929, but the Academy removed him as a choice, believing it would discredit the award if an animal won.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h5>📻 Media Empire</h5>
+                <p>Featured in advertisements for Ken-L Ration dog food and even barked in his own radio program, "The Wonder Dog," in 1930. New York City Mayor Jimmy Walker gave him a key to the city.</p>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Lasting Legacy:</strong> Rin Tin Tin and Nanette produced almost 50 puppies, with recipients including celebrities like Greta Garbo, W.K. Kellogg, and Jean Harlow. The bloodline has been maintained since 1957, with Rin Tin Tin X born in 2007.</p>
+            </div>
+
+            <h4>Cultural Impact & War Heroes</h4>
+            
+            <h5>📺 Television Legacy</h5>
+            <p>Rin Tin Tin's descendants starred in the television series "The Adventures of Rin Tin Tin" (1954-1959), which produced 164 episodes on ABC, further cementing the breed's popularity in American households.</p>
+
+            <h5>🎖️ War Heroes</h5>
+            <ul>
+                <li><strong>Army Dog Vida:</strong> Detected 5 mines and a grenade buried underground in Kashmir Valley, preventing soldier casualties</li>
+                <li><strong>K-9 Cracker:</strong> Detected several IEDs in Bastar before dying while detecting a pressure bomb IED, attaining martyrdom while saving many lives</li>
+                <li><strong>K9 Sophie:</strong> Special Frontier Force ED Dog Squad instrumental in multiple detection operations</li>
+            </ul>
+
+            <h4>Breed Popularity Impact</h4>
+            <p>Along with Strongheart, Rin Tin Tin was responsible for greatly increasing the popularity of German Shepherd dogs as family pets. American soldiers' admiration for the breed's bravery during World War I, combined with the popularity of Rin Tin Tin's films, helped weather anti-German sentiment and established the German Shepherd as one of America's most beloved breeds.</p>
+
+            <div class="info-box">
+                <p><strong>Final Resting Place:</strong> When Rin Tin Tin died in 1932, Duncan returned his body to France where he is buried in the Cimetière des Chiens et Autres Animaux Domestiques, the famous pet cemetery in Paris.</p>
+            </div>
+
+            <h4>Modern Service Legacy</h4>
+            <p>Today, countless unnamed German Shepherds continue serving daily in police forces, militaries, search and rescue operations, and as service animals worldwide, carrying on the breed's legacy of loyal service that began over a century ago with von Stephanitz's original vision of the perfect working dog.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 German Shepherd World | 🐾 Loyal Hearts • Brave Souls 🐾 | Created with ❤️ for Dog Lovers</p>
+    </footer>
+</body>
+</html>
